@@ -6,10 +6,10 @@ More precisely, the validation function returns a pair : ( *output data* , set o
 - The *output data* is essentially a deep copy of the input data.  
     We will see further, how the input and output data may differ.
 
-- A *tuple* may be a pair ( <path> , <message> ) or a triple ( <path> , <message> , <value> )
-    - <path>    is a string giving the localization of the the unmatched entry within the scheme.
-    - <message> is a string giving an explanation about the error.
-    - <value>   is a python's object giving the erroneous value (which is not always possible).
+- A *tuple* may be a pair ( path , message ) or a triple ( path , message , value )
+    - path    is a string giving the localization of the the unmatched entry within the scheme.
+    - message is a string giving an explanation about the error.
+    - value   is a python's object giving the erroneous value (which is not always possible).
 
 Beware : the order of the error messages is unpredictable.
 
